@@ -1,38 +1,102 @@
-.App {
+body{
+  background-color: #eee;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dictionary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dictionary h1{
+  font-size: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchContainer{
+  width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+}
+
+.searchContainer input{
+  padding: 4px 12px;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.searchContainer button{
+  width: 80px;
+  margin: auto;
+  background-color: #dcdc24;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 2px solid #000;
+  font-size: 18px;
+}
+
+.searchContainer button:hover{
+  cursor: pointer;
+  background-color: #eee;
+  color: red;
+}
+
+
+.showResult{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.showResult h2{
+  color: #dc2334;
+  margin: 0;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.showResult h4{
+  color: #41c41a;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Four Oh Four Page */
+.center-text{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.center-text h1{
+  margin: 0;
+  color: #dc2334;
+  font-weight: bold;
+  font-size: 4rem; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center-text p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.center-text a{
+  text-decoration: none;
+  color: #41c41a;
+  font-size: 20px;
+  border: 2px solid #41c41a;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.center-text a:hover{
+  cursor: pointer;
+  transition: .5s ease-in red;
 }
